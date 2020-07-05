@@ -1,0 +1,11 @@
+.lo-alert,
+.mitel-legal #legal-wrapper .blur-over .input-group .lo-error,
+.mitel-legal #legal-wrapper.legal-sso .blur-over .input-group.lo-error {
+  color: #15325f;
+}
+
+.mitel-legal .lo-gradient-squares {
+  background: #15325f;
+  /* Background pattern from subtlepatterns.com */
+  /* background-image: url("/assets/images/square_bg.png"), linear-gradient(to bottom, lighten($main-color, 10), $accent1); */
+}

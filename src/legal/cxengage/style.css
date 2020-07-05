@@ -1,0 +1,11 @@
+.lo-alert,
+.cxengage-legal #legal-wrapper .blur-over .input-group .lo-error,
+.cxengage-legal #legal-wrapper.legal-sso .blur-over .input-group.lo-error {
+  color: #07487a;
+}
+
+.cxengage-legal .lo-gradient-squares {
+  background: #07487a;
+  /* Background pattern from subtlepatterns.com */
+  background-image: url('assets/images/square_bg.png'), linear-gradient(to bottom, #0a64aa, #3498db);
+}
