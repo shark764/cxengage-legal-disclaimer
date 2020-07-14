@@ -15,7 +15,7 @@ const App = () => (
         component={RouteWrapper(CxEngage)}
       />
       <Route path="/mitel-legal/:locale?" component={RouteWrapper(Mitel)} />
-      <Route component={RouteWrapper(NotFound)} />
+      <Route component={NotFound} />
     </Switch>
   </HashRouter>
 );
