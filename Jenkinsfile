@@ -1,5 +1,5 @@
 #!groovy​
-@Library('sprockets@2.10.8') _
+@Library('sprockets') _
 
 node () {
     // If you want to use a specific node version in your lambda
@@ -9,5 +9,5 @@ node () {
 
     // If you don't set a node version,
     // it will use node 12.x by default
-    nodeCore.defaultPipeline()
+    nodeCore.defaultPipeline(frontendBuild: true)
 }

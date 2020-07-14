@@ -1,6 +1,6 @@
 {
   "name": "cxengage-legal-disclaimer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Legal Disclaimer sites for CxEngage",
   "private": true,
   "repository": {
@@ -21,7 +21,7 @@
     "react-intl": "^5.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "serenova-client-strings": "^0.1.6-SNAPSHOT"
+    "serenova-client-strings": "^0.1.7-SNAPSHOT"
   },
   "scripts": {
     "start": "react-scripts start",
