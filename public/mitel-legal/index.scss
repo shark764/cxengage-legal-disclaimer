@@ -1,0 +1,361 @@
+
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+//injector
+//endinjector
+
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+
+$lightest-grey: #ebebeb;
+$light-grey: #CCCCCC;
+$grey: #999999;
+$dark-grey: #656565;
+$darkest-grey: #474747;
+$succes-green: #4fb845;
+
+$main-color: rgb(21,50,95);
+$accent1: #3498db;
+$accent-light: #e6f5ff;
+
+$max-control-width: 500px;
+$controls-label-width: 150px;
+$toggle-width: 50px;
+$main-font: Arial, Helvetica, sans-serif;
+$navbar-height: 50px;
+$details-table-width: $max-control-width + 200px;
+$min-body-width: 1130px;
+
+.lo-alert {
+  color: $main-color;
+  background-color: $accent-light;
+  border: 2px solid $accent1;
+}
+
+
+@mixin border-radius-complex ($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+  -webkit-border-top-right-radius:    $topright;
+  -webkit-border-bottom-right-radius: $bottomright;
+  -webkit-border-bottom-left-radius:  $bottomleft;
+  -webkit-border-top-left-radius:     $topleft;
+
+  -moz-border-radius-topright:        $topright;
+  -moz-border-radius-bottomright:     $bottomright;
+  -moz-border-radius-bottomleft:      $bottomleft;
+  -moz-border-radius-topleft:         $topleft;
+
+  border-top-right-radius:            $topright;
+  border-bottom-right-radius:         $bottomright;
+  border-bottom-left-radius:          $bottomleft;
+  border-top-left-radius:             $topleft;
+
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+}
+
+$min-body-width: 1130px;
+$navbar-height: 50px;
+
+html, body {
+  height: 100%;
+  min-width: $min-body-width;
+  overflow-y: hidden; /*Required to prevent tooltips from (occasionally) briefly creating a scrollbar */
+  overflow-x: auto; /*Required to show scrollbar on small windows */
+  position: static;
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: auto !important;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  background: white;
+}
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #474747;
+  font-size: 14px;
+}
+
+body > .ng-view {
+  height: calc(100% - #{$navbar-height});
+}
+
+.content-container, div#table-pane:not(.table-widget) {
+  overflow-y: auto;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+}
+
+*, div {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+$form-height: 300px;
+
+#legal-page {
+  box-sizing: content-box;
+  margin-top: -$navbar-height;
+  padding-top: $navbar-height;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#legal-wrapper {
+  box-sizing: border-box;
+  width: 880px;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+
+  h1 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  h2 {
+    padding-top: 20px;
+    padding-bottom: 2px;
+  }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Source Sans Pro', sans-serif !important;
+  }
+
+  img {
+    margin-bottom: 3px;
+  }
+
+  form-error {
+    & > div {
+      margin-bottom: 10px;
+    }
+  }
+
+  .smallLabel {
+    font-style: italic;
+    color: gray;
+    padding: 2px 3px 10px 3px;
+  }
+
+  .legalLink {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+
+  .loading {
+    color: #fff;
+    opacity: 0.87;
+  }
+
+  #glass-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  button {
+    &.btn-primary {
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .addl-legal-options {
+    background-color: transparent;
+    background-image: none;
+    overflow: hidden;
+
+    span {
+      float:left;
+      text-align: center;
+      width: 50%;
+
+      p {
+        margin-top: 20px;
+        text-align: center;
+
+        a {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .blur-over {
+    @include border-radius-complex(3px, 3px, 3px, 3px);
+    background-color: white;
+    padding: 20px 40px;
+
+    & > .lo-error {
+      margin-bottom: 20px;
+    }
+
+    .input-group + .input-group {
+      margin-top: 20px;
+    }
+
+    .input-group .lo-error {
+      @extend .lo-alert
+    }
+  }
+
+  .btn {
+    height: 40px;
+    width: 100%;
+  }
+
+  .btn-primary {
+    @include border-radius-complex(0, 3px, 3px, 0);
+  }
+
+  .legal {
+    padding-top: 60px;
+  }
+}
+
+#legal-wrapper.legal-default,
+#reset-password-page {
+  .forgot-pass {
+    margin-top: 20px;
+    text-align: center;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+#legal-wrapper.legal-default {
+  .password {
+    span {
+      color: #ff0000;
+    }
+  }
+}
+
+#legal-wrapper.legal-sso {
+  .blur-over {
+    padding: 20px 20px;
+
+    &.password-field {
+      padding-bottom: 0;
+    }
+
+    & > .lo-error {
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      margin-left: 0;
+
+      &.lo-error {
+        @extend .lo-alert
+      }
+
+      & + .input-group {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .input-group {
+    padding: 0;
+    margin: 0 10px;
+
+    input {
+      margin: 0;
+    }
+
+    .lo-error {
+      margin-top: 0;
+    }
+  }
+
+  .password {
+    position: relative;
+    padding: 0 0 8px;
+
+    span.back-link {
+      display: block;
+      padding-top: 5px;
+      font-size: 12px;
+      color: #fff;
+    }
+  }
+
+  .addl-legal-options {
+    background-color: transparent;
+    background-image: none;
+    overflow: hidden;
+
+    span {
+      float:left;
+      text-align: center;
+      width: 50%;
+
+      p {
+        margin-top: 20px;
+        text-align: center;
+
+        a {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.lo-gradient-squares {
+  background: $main-color;
+  /* Background pattern from subtlepatterns.com */
+  /* background-image: url("/assets/images/square_bg.png"), linear-gradient(to bottom, lighten($main-color, 10), $accent1); */
+}
+
+#topnav > ul > li:not(#welcome):not(#helpMenu) .label-icon {
+  color : $main-color;
+}
+
+#topnav > ul > li:hover:not(#welcome):not(#helpMenu) .label-icon {
+  color: #fff;
+}
+
+#topnav > ul > li.active .drop-label span,
+#topnav > ul > li:hover .drop-label span,
+#topnav > ul > li.active #logo,
+#topnav > ul > li:hover #logo {
+  box-shadow: inset 0px -5px 0px 0px $accent1;
+}
+
+lo-time-picker select:not([disabled]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("assets/images/down-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 13px 13px;
+}
+
+lo-time-picker select::-ms-expand {
+  display: none;
+}

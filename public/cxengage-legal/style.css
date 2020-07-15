@@ -1,0 +1,231 @@
+/* Do not remove this comments bellow. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+.lo-alert, #legal-wrapper .blur-over .input-group .lo-error, #legal-wrapper.legal-sso .blur-over .input-group.lo-error {
+  color: #07487a;
+  background-color: #e6f5ff;
+  border: 2px solid #3498db; }
+
+html, body {
+  height: 100%;
+  min-width: 1130px;
+  overflow-y: hidden;
+  /*Required to prevent tooltips from (occasionally) briefly creating a scrollbar */
+  overflow-x: auto;
+  /*Required to show scrollbar on small windows */
+  position: static;
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: auto !important;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  background: white; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #474747;
+  font-size: 14px; }
+
+body > .ng-view {
+  height: calc(100% - 50px); }
+
+.content-container, div#table-pane:not(.table-widget) {
+  overflow-y: auto; }
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding-top: 50px; }
+
+*, div {
+  box-sizing: border-box; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+#legal-page {
+  box-sizing: content-box;
+  margin-top: -50px;
+  padding-top: 50px;
+  height: 100%;
+  width: 100%;
+  overflow: auto; }
+
+#legal-wrapper {
+  box-sizing: border-box;
+  width: 880px;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  #legal-wrapper p {
+    padding-top: 5px;
+    padding-bottom: 10px; }
+  #legal-wrapper h1 {
+    padding-top: 8px;
+    padding-bottom: 8px; }
+  #legal-wrapper h2 {
+    padding-top: 20px;
+    padding-bottom: 2px; }
+  #legal-wrapper h1, #legal-wrapper h2, #legal-wrapper h3, #legal-wrapper h4, #legal-wrapper h5, #legal-wrapper h6, #legal-wrapper .h1, #legal-wrapper .h2, #legal-wrapper .h3, #legal-wrapper .h4, #legal-wrapper .h5, #legal-wrapper .h6 {
+    font-family: 'Source Sans Pro', sans-serif !important; }
+  #legal-wrapper form-error > div {
+    margin-bottom: 10px; }
+  #legal-wrapper .smallLabel {
+    font-style: italic;
+    color: gray;
+    padding: 2px 3px 10px 3px; }
+  #legal-wrapper .legalLink {
+    text-decoration: underline;
+    color: #ffffff; }
+  #legal-wrapper .loading {
+    color: #fff;
+    opacity: 0.87; }
+  #legal-wrapper #glass-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  #legal-wrapper button.btn-primary {
+    color: #fff; }
+    #legal-wrapper button.btn-primary:hover {
+      color: #fff; }
+  #legal-wrapper .addl-legal-options {
+    background-color: transparent;
+    background-image: none;
+    overflow: hidden; }
+    #legal-wrapper .addl-legal-options span {
+      float: left;
+      text-align: center;
+      width: 50%; }
+      #legal-wrapper .addl-legal-options span p {
+        margin-top: 20px;
+        text-align: center; }
+        #legal-wrapper .addl-legal-options span p a {
+          color: #fff;
+          text-decoration: underline; }
+  #legal-wrapper .blur-over {
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-topleft: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background-color: white;
+    padding: 20px 40px; }
+    #legal-wrapper .blur-over > .lo-error {
+      margin-bottom: 20px; }
+    #legal-wrapper .blur-over .input-group + .input-group {
+      margin-top: 20px; }
+  #legal-wrapper .btn {
+    height: 40px;
+    width: 100%; }
+  #legal-wrapper .btn-primary {
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-topleft: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 0;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; }
+  #legal-wrapper .legal {
+    padding-top: 60px; }
+
+#legal-wrapper.legal-default .forgot-pass,
+#reset-password-page .forgot-pass {
+  margin-top: 20px;
+  text-align: center; }
+  #legal-wrapper.legal-default .forgot-pass a,
+  #reset-password-page .forgot-pass a {
+    color: #fff;
+    text-decoration: underline; }
+
+#legal-wrapper.legal-default .password span {
+  color: #ff0000; }
+
+#legal-wrapper.legal-sso .blur-over {
+  padding: 20px 20px; }
+  #legal-wrapper.legal-sso .blur-over.password-field {
+    padding-bottom: 0; }
+  #legal-wrapper.legal-sso .blur-over > .lo-error {
+    margin-bottom: 20px; }
+  #legal-wrapper.legal-sso .blur-over .input-group {
+    margin-left: 0; }
+    #legal-wrapper.legal-sso .blur-over .input-group + .input-group {
+      margin-top: 0; }
+
+#legal-wrapper.legal-sso .input-group {
+  padding: 0;
+  margin: 0 10px; }
+  #legal-wrapper.legal-sso .input-group input {
+    margin: 0; }
+  #legal-wrapper.legal-sso .input-group .lo-error {
+    margin-top: 0; }
+
+#legal-wrapper.legal-sso .password {
+  position: relative;
+  padding: 0 0 8px; }
+  #legal-wrapper.legal-sso .password span.back-link {
+    display: block;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #fff; }
+
+#legal-wrapper.legal-sso .addl-legal-options {
+  background-color: transparent;
+  background-image: none;
+  overflow: hidden; }
+  #legal-wrapper.legal-sso .addl-legal-options span {
+    float: left;
+    text-align: center;
+    width: 50%; }
+    #legal-wrapper.legal-sso .addl-legal-options span p {
+      margin-top: 20px;
+      text-align: center; }
+      #legal-wrapper.legal-sso .addl-legal-options span p a {
+        color: #fff;
+        text-decoration: underline; }
+
+.lo-gradient-squares {
+  background: #07487a;
+  /* Background pattern from subtlepatterns.com */
+  background-image: url("assets/images/square_bg.png"), linear-gradient(to bottom, #0a64aa, #3498db); }
+
+#topnav > ul > li:not(#welcome):not(#helpMenu) .label-icon {
+  color: #07487a; }
+
+#topnav > ul > li:hover:not(#welcome):not(#helpMenu) .label-icon {
+  color: #fff; }
+
+#topnav > ul > li.active .drop-label span,
+#topnav > ul > li:hover .drop-label span,
+#topnav > ul > li.active #logo,
+#topnav > ul > li:hover #logo {
+  box-shadow: inset 0px -5px 0px 0px #3498db; }
+
+lo-time-picker select:not([disabled]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("assets/images/down-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 13px 13px; }
+
+lo-time-picker select::-ms-expand {
+  display: none; }
