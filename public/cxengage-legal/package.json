@@ -1,0 +1,14 @@
+{
+  "name": "cxengage-legal",
+  "version": "1.0.0",
+  "description": "Legal Disclaimer site for CxEngage",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerenovaLLC/cxengage-legal.git"
+  },
+  "author": "Serenova"
+}

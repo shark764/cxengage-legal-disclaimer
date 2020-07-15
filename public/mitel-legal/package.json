@@ -1,0 +1,14 @@
+{
+  "name": "mitel-legal",
+  "version": "1.0.0",
+  "description": "Legal Disclaimer site for Mitel",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerenovaLLC/mitel-legal.git"
+  },
+  "author": "Serenova"
+}

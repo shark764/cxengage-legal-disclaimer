@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.3]
+* Adding legacy legal disclaimer pages to be accessible on production environment.
+
 ## [1.0.2]
 * Adding parameter to jenkinsfile to deploy just /build/ files.
 
