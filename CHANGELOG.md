@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.4]
+* Updating client-strings to v0.1.7.
+* Supporting new languages translations and datetime formats.
+
 ## [1.0.3]
 * Adding legacy legal disclaimer pages to be accessible on production environment.
 
