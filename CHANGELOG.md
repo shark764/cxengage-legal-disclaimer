@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.6]
+### Changed
+- <no-jira> - Replacing company's name to Lifesize for legacy pages.
+
 ## [1.0.5]
 ### Changed
 - <no-jira> - Replacing company's name to Lifesize.
