@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.7]
+### Changed
+- Updating client-strings to v0.1.11.
+- Translations for replacing company's name to Lifesize.
+
 ## [1.0.6]
 ### Changed
 - <no-jira> - Replacing company's name to Lifesize for legacy pages.
