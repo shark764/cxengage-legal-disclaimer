@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.8]
+### Changed
+- Updating serenova-client-strings version to 0.2.2.
+- CXV1-22883 - Adding missing tranlations for en-GB
+
 ## [1.0.7]
 ### Changed
 - Updating client-strings to v0.1.11.
