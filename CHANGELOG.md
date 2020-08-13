@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.9]
+### Changed
+- Adding Codeowners for reviewing and PRs template.
+
 ## [1.0.8]
 ### Changed
 - Updating serenova-client-strings version to 0.2.2.
