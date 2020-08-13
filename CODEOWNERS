@@ -1,0 +1,10 @@
+# Current code owners
+* @joshclowater @ChrisFerron @shark764
+
+# Team leads and administrators have the ability to approve pr's in code owners absence or at thier own disccretion
+
+# Being a code owner means you will automatically be requested to review the code for this repos master branch,
+# and your (and all code owners) review will need to be completed before the pr can be merged unless stated otherwise 
+# from a team lead or administrator
+
+# If you would like the added resposibility or reviewing all pull requests as a code owner for this repo please reach out to your team lead.
